@@ -1,3 +1,3 @@
-﻿Console.WriteLine("Введите число или слова");
-string a = Console.ReadLine();
-Console.WriteLine(a[a.Length - 1]);
+﻿Console.WriteLine("Введите число");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(a % 10);
