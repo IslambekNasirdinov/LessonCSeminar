@@ -1,9 +1,14 @@
 ﻿
-int a = new Random().Next(10,99);
-int b = new Random().Next(10,99);
+int number = new Random().Next(10,99);
+int a = number / 10;
+int b = number % 10;
 if (a>b){
-    Console.WriteLine(a);
-}else
+    Console.WriteLine($"Our number is {number}. {a}>{b}. Result{a}");
+}
+else if(a<b)
 {
-    Console.WriteLine(b);
+    Console.WriteLine($"Our number is {number}. {b}>{a}. Result{b}");
+}
+else{
+    Console.WriteLine($"Our number is {number}. {a}={b}");
 }
