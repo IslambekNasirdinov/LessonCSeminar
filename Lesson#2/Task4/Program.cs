@@ -6,5 +6,5 @@ int b = Convert.ToInt32(Console.ReadLine());
 if(a%b==0 || b%a==0){
     Console.WriteLine("Кратно");
 } else{
-    Console.WriteLine($"нет остаток {a%b}");
+    Console.WriteLine($"не кратно остаток {a%b}");
 }
