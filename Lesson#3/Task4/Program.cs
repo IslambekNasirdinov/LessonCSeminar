@@ -1,8 +1,13 @@
-﻿ax = float(input('Введите координаты точки a по оси x:'))
-ay = float(input('Введите координаты точки a по оси y:'))
-bx = float(input('Введите координаты точки b по оси x:'))
-by = float(input('Введите координаты точки b по оси y:'))
+﻿Console.WriteLine("Введите координаты первого точки ");
+int x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты второй точки ");
+int y = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты третьей точки ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите координаты четвертой точки ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+int squareX = ((x1-x)*(x1-x));
+int squareY = ((y1-y)*(y1-y));
 
-import math
-distans = math.sqrt((ax-bx)**2+(ay-by)**2)
-print(f'Растояние между точкой A до точки B = {distans}' )
+double Length = Math.Sqrt(squareX+squareY);
+Console.WriteLine(Length);
