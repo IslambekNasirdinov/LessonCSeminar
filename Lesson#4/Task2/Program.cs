@@ -1,13 +1,17 @@
-﻿
-int length(int a)
-{
-   int a = Convert.ToInt32(Console.ReadLine());
-   int length = text.length;
-   for (int i = 0; i < length; i++)
-   {
-      int ;
+﻿Console.WriteLine("Введите число для определение его длины");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"->{countNumber(number)}");
 
+int countNumber(int a)
+{
+   int count = 0;
+   while (a > 0)
+   {
+      int b = a % 10;
+      count +=1;
+      a/=10;
    }
+   return count;
 }
 
 
