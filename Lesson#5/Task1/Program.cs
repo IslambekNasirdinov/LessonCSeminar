@@ -1,5 +1,5 @@
 ﻿
-int [] = generateArray();
+int[] array = generateArray();
 
 int sumPositive = 0;
 int sumNegative = 0;
@@ -17,10 +17,10 @@ Console.WriteLine(String.Join(", ", array));
 Console.WriteLine($"Сумма позитивных чисел: {sumPositive}");
 Console.WriteLine($"Сумма отрицательных чисел: {sumNegative}");
 
-int [] generateArray(){
-int [] =  new int [12];
+int[] generateArray(){
+int[] array =  new int[12];
 for ( int i=0; i< array.Length; i++){
-    array[i] new Random().Next(-9,10);
+    array[i] = new Random().Next(-9,10);
 }
 return array;
 }
