@@ -17,12 +17,12 @@ for (int i=0; i<array.Length; i++){
 Console.WriteLine(String.Join(", ", array));
 Console.WriteLine($"Максимальное число массива:{max}");
 Console.WriteLine($"Минимальное число массива: {min}");
-Console.WriteLine($"Разница между максимальным и минимальным числами: {max-min}");
+Console.WriteLine($"Разница между максимальным и минимальным числами: {max-(-min)}");
 
 int[] generateArray(){
 int[] array =  new int[6];
 for ( int i=0; i< array.Length; i++){
-    array[i] = new Random().Next(1,100);
+    array[i] = new Random().Next(-10,10);
 }
 return array;
 }
