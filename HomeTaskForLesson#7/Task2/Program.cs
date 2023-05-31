@@ -11,7 +11,7 @@ for (int i = 0; i < array.GetLength(0); i++)
 Console.WriteLine();
 }
 if (number < array.GetLength(0) && number< array.GetLength(1)){
-    Console.WriteLine($"Есть такой индек в массиве: {array[number, number]}");
+    Console.WriteLine($"Есть такой индек в массиве, его значение: {array[number, number]}");
 } else{
     Console.WriteLine($"Нет такого индекса в массиве: {number}");
 }
